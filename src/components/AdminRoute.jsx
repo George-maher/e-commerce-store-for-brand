@@ -7,7 +7,7 @@ import AccessDenied from '../pages/AccessDenied';
 export default function AdminRoute({ children, secretPath, lang }) {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
-  const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || 'geogeo3377123@gmail.com';
+  const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || 'YOUREAMIL';
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (u) => { setUser(u); setLoading(false); });

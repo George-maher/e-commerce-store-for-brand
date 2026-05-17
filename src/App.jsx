@@ -13,9 +13,9 @@ import CartPage from './pages/CartPage';
 import ProductDetail from './pages/ProductDetail';
 import AdminRoute from './components/AdminRoute';
 
-const SECRET = import.meta.env.VITE_SECRET_PATH || '/super-secret-login-8392jfks';
-const ADMIN_PATH = import.meta.env.VITE_ADMIN_PATH || '/geo33441099ee_mm';
-const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL || 'geogeo3377123@gmail.com';
+const SECRET = import.meta.env.VITE_SECRET_PATH || '/SECRET PATH';
+const ADMIN_PATH = import.meta.env.VITE_ADMIN_PATH || '/YOURADMIN PATH';
+const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL || 'youreamil';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(() => {

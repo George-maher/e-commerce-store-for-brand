@@ -20,7 +20,7 @@ export default function Dashboard({ lang = 'en' }) {
   useEffect(() => {
     const auth = getAuth();
     const user = auth.currentUser;
-    const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || 'geogeo3377123@gmail.com';
+    const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || 'YOUREMAIL';
     const unsub1 = onSnapshot(collection(db, 'products'), (s) => setProducts(s.docs.map(d => ({ id: d.id, ...d.data() }))), () => {});
     const unsub2 = onSnapshot(collection(db, 'offers'), (s) => setOffers(s.docs.map(d => ({ id: d.id, ...d.data() }))), () => {});
     return () => { unsub1(); unsub2(); };

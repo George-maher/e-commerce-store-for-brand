@@ -21,8 +21,8 @@ export default function Login({ lang = 'en' }) {
     try {
       const cred = await signInWithEmailAndPassword(auth, email, password);
       const user = cred.user;
-      const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL || "geogeo3377123@gmail.com";
-      if (user?.email === ADMIN_EMAIL) navigate("/geo33441099ee_mm");
+      const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL || "YOUREMAIL";
+      if (user?.email === ADMIN_EMAIL) navigate("/LOGINPATH");
       else { await signOut(auth); setError(isEn ? "ACCESS DENIED: NOT AN ADMIN" : "تم رفض الوصول: لست مشرفاً"); }
     } catch (err) {
       setError(isEn ? "LOGIN FAILED: " + (err?.message || "") : "فشل تسجيل الدخول: " + (err?.message || ""));

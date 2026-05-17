@@ -7,12 +7,12 @@ import { getStorage } from "firebase/storage";
 // Read Firebase config from import.meta.env (Vite) and also allow
 // REACT_APP_* keys if you supply them via a build system that exposes them.
 const firebaseConfig = {
-  apiKey: "AIzaSyBAuSv_-YPC9hfHXVHYZdtU3g37J6CI6XM",
+  apiKey: "APIKEY",
   authDomain: "mintalitat.firebaseapp.com",
   projectId: "mintalitat",
   storageBucket: "mintalitat.firebasestorage.app",
-  messagingSenderId: "645579050720",
-  appId: "1:645579050720:web:6b867034de752b0d9c8a85",
+  messagingSenderId: "ID",
+  appId: "APPID",
   measurementId: "G-FY3G0HJFL3"
 };
 

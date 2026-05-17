@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "mintalitat"
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  }
+}
